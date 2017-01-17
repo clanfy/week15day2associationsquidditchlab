@@ -14,7 +14,21 @@ bear_pack = Team.create({name: "CodeClan Bear Pack"})
 
 Player.delete_all()
 
-p1 = Player.create({name: "Cookie", jersey: 12, team_id: valkyries.id})
-p2 = Player.create({name: "Martin", jersey: 13, team_id: gryffindor.id})
-p3 = Player.create({name: "Rubot", jersey: 01, team_id: bear_pack.id})
-p3 = Player.create({name: "Dennis", jersey: 81, team_id: valkyries.id})
+Player.create({name: "Cookie", jersey: 12, team_id: valkyries.id})
+Player.create({name: "Martin", jersey: 13, team_id: gryffindor.id})
+Player.create({name: "Rubot", jersey: 01, team_id: bear_pack.id})
+Player.create({name: "Dennis", jersey: 81, team_id: valkyries.id})
+
+Pitch.delete_all()
+Match.delete_all()
+
+pitch1 = Pitch.create({name: "The Great Pitch", location: "Hogwarts"})
+pitch2 = Pitch.create({name: "World Cup Pitch", location: "New York"})
+
+Match.create({date: "2017-01-27", team_id: bear_pack.id, pitch_id: pitch2.id})
+Match.create({date: "2017-02-14", team_id: valkyries.id, pitch_id: pitch1.id})
+
+
+
+
+
