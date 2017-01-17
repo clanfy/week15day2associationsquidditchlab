@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2017-01-17 14:15:45
+  team_id: 
+  pitch_id: 
+
+two:
+  date: 2017-01-17 14:15:45
+  team_id: 
+  pitch_id: 
