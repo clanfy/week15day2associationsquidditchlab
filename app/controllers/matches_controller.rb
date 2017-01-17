@@ -5,4 +5,13 @@ class MatchesController < ApplicationController
     render :json => matches.as_json
   end
 
+  def create
+    match = Match.create({
+      date: params[:date],
+      team_id: params[:team_id],
+      pitch_id: params[:pitch_id]
+      })
+    render :json => match
+  end
+
 end
