@@ -10,3 +10,4 @@ Team.delete_all()
 
 valkyries = Team.create({name: "UVic Valkyries"})
 gryffindor = Team.create({name: "Hogwarts Gryffindor"})
+bear_pack = Team.create({name: "CodeClan Bear Pack"})
